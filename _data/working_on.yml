@@ -1,0 +1,8 @@
+- title: "Project or task name"
+  description: "One sentence on what it is and why it matters."
+  status: "In progress"
+  url: "https://example.com/project-page"
+
+- title: "Second project"
+  description: "One sentence describing it."
+  status: "Planning"
