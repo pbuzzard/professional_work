@@ -3,7 +3,7 @@ layout: default
 nav_order: 1
 nav_title: Home
 ---
-
+{% include currently-working-on.html %}
 ## Latest posts
 
 {% for post in site.posts limit:5 %}
