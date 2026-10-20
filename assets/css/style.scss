@@ -1,0 +1,40 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+$page-bg: #fdf8fb;
+$header-bg: #4a3a5c;
+$header-border: #342940;
+$header-sub: #f2c9dd;
+$link: #8a4fa8;
+$link-hover: #6b3a85;
+$accent: #e8a6c4;
+$heading: #3b2f47;
+
+body { background: $page-bg; color: #4a4350; }
+
+a { color: $link; }
+a:hover { color: $link-hover; }
+
+header { background: $header-bg; border-bottom-color: $header-border; }
+header h2 { color: $header-sub; }
+
+header a.button { color: $header-bg; background: $accent; border-radius: 6px; }
+@media only screen and (min-width: 768px) {
+  header a.button { width: auto; height: auto; padding: 10px 16px; font-size: 18px; }
+}
+
+#main-content h1, #main-content h2, #main-content h3,
+#main-content h4, #main-content h5, #main-content h6 { color: $heading; }
+
+#main-content h1:before, #main-content h2:before, #main-content h3:before,
+#main-content h4:before, #main-content h5:before, #main-content h6:before { color: $accent; }
+
+#main-content { float: none; width: 100%; }
+
+.site-nav { margin-bottom: 20px; font-size: 16px; }
+.site-nav a { margin-right: 16px; font-weight: bold; }
+
+footer { color: #6b6270; }
+.site-nav a.active { color: $heading; border-bottom: 2px solid $accent; }
