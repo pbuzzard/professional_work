@@ -40,3 +40,28 @@ header a.button { color: $header-bg; background: #fff; border-radius: 6px; }
 .site-nav a.active { color: $heading; border-bottom: 2px solid $accent; }
 
 footer { color: $muted; border-top: 1px solid $border; }
+
+/* Currently working on box */
+#main-content .working-box {
+  margin: 24px 0;
+  padding: 16px 20px;
+  background: #f7fafc;
+  border: 1px solid $border;
+  border-left: 5px solid $accent;
+  border-radius: 8px;
+}
+#main-content .working-box h3 { margin: 0 0 10px; font-size: 1.1em; }
+#main-content .working-box ul { margin: 0; padding-left: 0; list-style: none; }
+#main-content .working-box li { margin-bottom: 12px; }
+#main-content .working-box li:last-child { margin-bottom: 0; }
+.working-box .status {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 1px 8px;
+  font-size: 0.75em;
+  font-weight: 600;
+  color: $accent-dark;
+  background: #e1f1f6;
+  border-radius: 999px;
+}
+.working-meta { color: $muted; font-size: 0.92em; }
