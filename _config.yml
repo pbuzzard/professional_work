@@ -1,6 +1,7 @@
 theme: jekyll-theme-architect
 title: Pamela Buzzard
 description: Associate Librarian, Northern Arizona University
+baseurl: "/professional_work"
 
 defaults:
   - scope:
