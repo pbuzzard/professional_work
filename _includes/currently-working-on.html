@@ -1,0 +1,13 @@
+{%- if site.data.working_on and site.data.working_on.size > 0 -%}
+<div class="working-box">
+<h3>Currently working on</h3>
+<ul>
+{%- for item in site.data.working_on %}
+<li>
+<strong>{% if item.url %}<a href="{{ item.url }}">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}</strong>{% if item.status %}<span class="status">{{ item.status }}</span>{% endif %}
+{%- if item.description %}<br><span class="working-meta">{{ item.description }}</span>{% endif %}
+</li>
+{%- endfor %}
+</ul>
+</div>
+{%- endif -%}
